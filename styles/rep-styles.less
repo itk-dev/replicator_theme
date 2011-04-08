@@ -301,49 +301,126 @@ input[type=radio] {
 
 /* !----- / Submenu ----- */
 
-#left .menu li {
-  list-style-image: none;
-  list-style-type: none;
+#page #left .block-menu_block .content {
+  background: none;
+  border-bottom: 1px solid #ebebeb;
+  margin: 0 10px 0 0;
 }
 
-
-#left .menu li.active-trail {
-  font-weight: bold;
-}
-
-#left .menu a:hover,
-#left .menu a:focus {
-}
-
-#left .menu .first {
-}
-
-#left .menu .last {
-}
-
-#left .menu a {
-  text-decoration: none;
-  color: #666;
-  background: url('../images/rep-sprites.png') -6px -21px no-repeat;
-  padding: 0 16px 2px;
-}
-
-#left .menu a.active {
-  color: #47a9ac;
+#left .menu {
+  margin: 0;
+  padding: 0;
 }
 
 #left .menu ul {
+  margin: 0;
+  padding: 0;
 }
 
 #left .menu li {
-  font-weight: normal;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
-#left .menu li ul {
+#left .menu a {
+  background: url('../images/rep-sprites.png') -6px -13px no-repeat;
+  display: block;
+  padding: 2px 0 3px 15px;
+  text-decoration: none;
 }
 
-#left .menu li li {
+#left .menu li.expanded a.active-trail {
 }
+
+#left .menu li.expanded a.active {
+}
+
+#left .menu a.active {
+}
+
+#left .menu a,
+#left .menu a:link,
+#left .menu a:visited {
+  text-decoration: none;
+}
+
+#left .menu a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+#left .menu li.first {
+  border-top: 0;
+}
+
+#left .menu li.first a {
+  border-top: 0;
+}
+
+#left .menu li {
+  background: transparent;
+  border-top: 1px solid #ebebeb;
+  list-style: none;
+  list-style-image: none;
+}
+
+#left .menu li.first.active-trail.active,
+#left .menu li li.first {
+  border-top: 1px solid #ebebeb;
+}
+
+#left .menu li.first.active-trail.active a,
+#left .menu li li.first a,
+#left .menu li a {
+  border-top: 1px solid #fafafa;
+}
+
+#left .menu li a:hover {
+  background-color: #f8f8f8;
+}
+
+#left .menu li.active {
+  background: #f3f3f3 url('../images/menu-shadow.png') repeat-x 0 0;
+}
+
+/* !----- / Submenu level 1 ----- */
+
+#left .menu li.active li {
+  margin: 0;
+}
+
+#left .menu li li.active {
+  background: #f3f3f3 url('../images/menu-shadow.png') repeat-x 0 0;
+  margin: 0;
+}
+
+#left .menu li li a.active {
+  background-color: transparent;
+}
+
+#left .menu li li a {
+  background-position: 8px -11px;
+  margin: 0;
+  padding: 3px 0 3px 30px;
+}
+
+/* !----- / Submenu level 2 ----- */
+
+#left .menu li li li a {
+  background-position: 23px -11px;
+  margin: 0;
+  padding: 3px 0 3px 45px;
+}
+
+/* !----- / Submenu level 3 ----- */
+
+#left .menu li li li li a {
+  background-position: 38px -11px;
+  margin: 0;
+  padding: 3px 0 3px 60px;
+}
+
 
 /* !----- / Page ----- */
 
