@@ -301,64 +301,79 @@ input[type=radio] {
 
 /* !----- / Submenu ----- */
 
-#page #left .block-menu_block .content {
+#page #left .block-menu_block .content,
+#page #right .block-menu_block .content {
   background: none;
   border-bottom: 1px solid #ebebeb;
   margin: 0 10px 0 0;
 }
 
-#left .menu {
+#left .menu,
+#right .menu {
   margin: 0;
   padding: 0;
 }
 
-#left .menu ul {
+#left .menu ul,
+#right .menu ul {
   margin: 0;
   padding: 0;
 }
 
-#left .menu li {
+#left .menu li,
+#right .menu li {
   line-height: 26px;
   margin: 0;
   padding: 0;
 }
 
-#left .menu a {
+#left .menu a,
+#right .menu a {
   background: url('../images/rep-sprites.png') -6px -13px no-repeat;
   display: block;
   padding: 2px 0 3px 15px;
   text-decoration: none;
 }
 
-#left .menu li.expanded a.active-trail {
+#left .menu li.expanded a.active-trail,
+#right .menu li.expanded a.active-trail {
 }
 
-#left .menu li.expanded a.active {
+#left .menu li.expanded a.active,
+#right .menu li.expanded a.active {
 }
 
-#left .menu a.active {
+#left .menu a.active,
+#right .menu a.active {
 }
 
 #left .menu a,
+#right .menu a,
 #left .menu a:link,
-#left .menu a:visited {
+#right .menu a:link,
+#left .menu a:visited,
+#right .menu a:visited {
   text-decoration: none;
 }
 
-#left .menu a:hover {
+#left .menu a:hover,
+#right .menu a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-#left .menu li.first {
+#left .menu li.first,
+#right .menu li.first {
   border-top: 0;
 }
 
-#left .menu li.first a {
+#left .menu li.first a,
+#right .menu li.first a {
   border-top: 0;
 }
 
-#left .menu li {
+#left .menu li,
+#right .menu li {
   background: transparent;
   border-top: 1px solid #ebebeb;
   list-style: none;
@@ -366,38 +381,49 @@ input[type=radio] {
 }
 
 #left .menu li.first.active-trail.active,
-#left .menu li li.first {
+#right .menu li.first.active-trail.active,
+#left .menu li li.first,
+#right .menu li li.first {
   border-top: 1px solid #ebebeb;
 }
 
 #left .menu li.first.active-trail.active a,
+#right .menu li.first.active-trail.active a,
 #left .menu li li.first a,
-#left .menu li a {
+#right .menu li li.first a,
+#left .menu li a,
+#right .menu li a {
   border-top: 1px solid #fafafa;
 }
 
-#left .menu li a:hover {
+#left .menu li a:hover,
+#right .menu li a:hover {
   background-color: #f8f8f8;
 }
 
-#left .menu li.active {
+#left .menu li.active,
+#right .menu li.active {
 }
 
 /* !----- / Submenu level 1 ----- */
 
-#left .menu li.active li {
+#left .menu li.active li,
+#right .menu li.active li {
   margin: 0;
 }
 
-#left .menu li li.active {
+#left .menu li li.active,
+#right .menu li li.active {
   margin: 0;
 }
 
-#left .menu li li a.active {
+#left .menu li li a.active,
+#right .menu li li a.active {
   background-color: transparent;
 }
 
-#left .menu li li a {
+#left .menu li li a,
+#right .menu li li a {
   background-position: 8px -11px;
   margin: 0;
   padding: 3px 0 3px 30px;
@@ -405,7 +431,8 @@ input[type=radio] {
 
 /* !----- / Submenu level 2 ----- */
 
-#left .menu li li li a {
+#left .menu li li li a,
+#right .menu li li li a {
   background-position: 23px -11px;
   margin: 0;
   padding: 3px 0 3px 45px;
@@ -413,7 +440,8 @@ input[type=radio] {
 
 /* !----- / Submenu level 3 ----- */
 
-#left .menu li li li li a {
+#left .menu li li li li a,
+#right .menu li li li li a {
   background-position: 38px -11px;
   margin: 0;
   padding: 3px 0 3px 60px;
