@@ -30,7 +30,7 @@
   </div>
 
   <?php if ($breadcrumb): ?>
-    <div id="breadcrumb" class="container-12">
+    <div id="breadcrumb">
       <?php print $breadcrumb; ?>
     </div>
    <?php endif; ?>

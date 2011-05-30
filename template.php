@@ -85,7 +85,7 @@ function replicator_breadcrumb($breadcrumb) {
       }
       $breadcrumb[]='<span class="breadcrumb-current">'. $title .'</span>';
     }
-    return '<div class="breadcrumb">'. implode($sep, $breadcrumb) .'</div>';
+    return '<div class="breadcrumb container-12">'. implode($sep, $breadcrumb) .'</div>';
   }
 }
 
