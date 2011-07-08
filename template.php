@@ -25,10 +25,14 @@ function replicator_preprocess_page(&$vars, $hook) {
   }
   
   // Set variables for the logo and site_name.
+  // Return the site_name even when site_name is disabled in theme settings.
+  $vars['logo_alt_text'] = (empty($vars['logo_alt_text']) ? variable_get('site_name', '') : $vars['logo_alt_text']);
+  $vars['site_logo'].= '<a id="site-logo" href="'. $vars['front_page'] .'" title="'. $vars['logo_alt_text'] .'" rel="home">';
+
   if (!empty($vars['logo'])) {
-    // Return the site_name even when site_name is disabled in theme settings.
-    $vars['logo_alt_text'] = (empty($vars['logo_alt_text']) ? variable_get('site_name', '') : $vars['logo_alt_text']);
-    $vars['site_logo'] = '<a id="site-logo" href="'. $vars['front_page'] .'" title="'. $vars['logo_alt_text'] .'" rel="home"><img src="'. $vars['logo'] .'" alt="'. $vars['logo_alt_text'] .'" /></a>';
+    $vars['site_logo'].= '<img src="'. $vars['logo'] .'" alt="'. $vars['logo_alt_text'] .'" />';
+  } else {
+    $vars['site_logo'].= variable_get('site_name', '');
   }
 
   if (theme_get_setting('replicator_aakb_topbar')) {
