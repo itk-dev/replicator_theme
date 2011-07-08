@@ -35,6 +35,8 @@ function replicator_preprocess_page(&$vars, $hook) {
     $vars['site_logo'].= variable_get('site_name', '');
   }
 
+  $vars['site_logo'].= '</a>';
+
   if (theme_get_setting('replicator_aakb_topbar')) {
 
     $aak_topbar = array();
